@@ -1,0 +1,20 @@
+Postgres
+pass: 1234
+port: 5432
+
+Query:
+CREATE DATABASE yusufAdisaputroTest;
+
+CREATE TABLE accounts (
+	user_id serial PRIMARY KEY,
+	username VARCHAR ( 50 ) UNIQUE NOT NULL,
+);
+
+TO dump sql:
+pg_dump -U postgres yusufadisaputrotest > test.sql
+pg_dump -U postgres -W -F p yusufadisaputrotest > C:\Users\yusuf\Desktop\test.sql
+
+TO RUN TYPESCRIPT:
+npm run tsc
+TO RUN NODE:
+node dist/server.js
