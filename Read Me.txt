@@ -1,0 +1,40 @@
+after unzipping these file 
+You should have folders:
+- dist 
+- node_modules 
+- src 
+and You should have files:
+- notes
+- package.json
+- package-lock.json
+- tsconfig.json
+
+To run the program PLEASE: npm run tsc > npm start
+In your terminal/CMD/PowerShell, should say "Port 3000"
+
+!!!!!!!!!! IT IS RUNNING ON PORT 3000 !!!!!!!!!! 
+
+______________________________________________________________________
+
+There are 4 APIs available:
+
+	1. http://localhost:3000/create-account (POST)
+		and it takes QUERY PARAMs
+		1. dateOfBirth
+		2. placeOfBirth
+		3. firstName
+		4. lastName
+		5. sex
+		6. companyId
+	2. http://localhost:3000/delete-account/:NIK (DELETE)
+	3. http://localhost:3000/edit-account/:NIK (PUT)
+		and it also takes QUERY PARAMs
+		1. lastName
+		2. firstName
+		3. placeOfBirth
+		4. dateOfBirth
+		5. companyId
+		6. sex
+	4. http://localhost:3000/get-all-accounts (GET) 
+		and it also takes QUERY PARAMs
+		1. sort {asc/desc/ASC/DESC}

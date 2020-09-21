@@ -12,7 +12,7 @@ CREATE TABLE accounts (
 
 TO dump sql:
 pg_dump -U postgres yusufadisaputrotest > test.sql
-pg_dump -U postgres -W -F p yusufadisaputrotest > C:\Users\yusuf\Desktop\test.sql
+pg_dump -U postgres -W -F p yusufadisaputrotest > C:\Users\yusuf\Desktop\yusufadisaputro.sql
 
 TO RUN TYPESCRIPT:
 npm run tsc
